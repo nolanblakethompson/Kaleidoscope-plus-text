@@ -14,7 +14,7 @@
 
 body #title {
     font-family: 'Cousine_Bold', sans-serif;
-    color: rgb(0,0, 255);
+    color: rgb(191, 255, 0);
     font-size: 5.1vw;
     position: fixed;
     top: 0;
@@ -82,4 +82,68 @@ body #title_three {
     filter: blur(3px);
         -webkit-filter: blur(2px);
 }
+
+.button-style {
+    font-family: 'Cousine_Bold', sans-serif;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    color: black;
+    padding: .5vw 2vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    margin: 1vw;
+    transition: background-color 0.3s ease, color 0.3s ease;;
+  }
+
+  .button-style:hover {
+    background-color: black;
+    color: white;
+
+  }
+
+  .label-style {
+    font-family: 'Cousine_Bold', sans-serif;
+    font-size: 1vw;
+    margin: 1vw;
+  }
+
+
+  input[type="range"] {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none;
+    width: 100%; /* Set width to fill its container */
+    height: 1vw; /* Set height */
+    background-color: #ffffff; /* Background color of the track */
+    border-radius: 1vw; /* Set border radius */
+  }
+  
+  /* Styles for the slider track */
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px; /* Height of the track */
+    background-color: #000000; /* Background color of the track */
+    border-radius: 5px; /* Set border radius */
+  }
+  
+  /* Styles for the slider thumb (the draggable handle) */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none;
+    width: 15px; /* Width of the thumb */
+    height: 15px; /* Height of the thumb */
+    background-color: #ffd3ff; /* Color of the thumb */
+    border-radius: 50%; /* Make the thumb round */
+  }
+  
+  /* Styles for the thumb when it's being dragged */
+  input[type="range"]:active::-webkit-slider-thumb {
+    background-color: #e8fd29; /* Change color when active */
+  }
+  
+  /* Styles for the thumb when it's hovered over */
+  input[type="range"]::-webkit-slider-thumb:hover {
+    background-color: #dde41e; /* Change color when hovered */
+  }
 
